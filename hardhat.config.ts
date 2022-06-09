@@ -105,13 +105,6 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://kovan.infura.io/v3/${INFURA_KEY}`,
     },
-<<<<<<< HEAD
-    mumbai: {
-      ...sharedNetworkConfig,
-      url: `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
-    },
-=======
->>>>>>> 767ef36bba88bdbc0c9fe3708a4290cabef4c376
     polygon: {
       ...sharedNetworkConfig,
       url: `https://polygon-mainnet.infura.io/v3/${INFURA_KEY}`,
@@ -132,14 +125,10 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://rpc.testnet.fantom.network/`,
     },
-    cronosTestnet: {
+    avalanche: {
       ...sharedNetworkConfig,
-      url: `https://cronos-testnet-3.crypto.org:8545/`
+      url: `https://api.avax.network/ext/bc/C/rpc`,
     },
-    cronos: {
-      ...sharedNetworkConfig,
-      url: `https://evm.cronos.org/`
-    }
   },
   deterministicDeployment,
   namedAccounts: {
